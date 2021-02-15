@@ -138,7 +138,7 @@ if( !function_exists('hashone_home_section') ){
 			'rasel',
 			// 'about',
 			'feature',
-			'portfolio',
+			// 'portfolio',
 			'service',
 			'team',
 			'counter',

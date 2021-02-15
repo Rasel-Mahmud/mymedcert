@@ -24,7 +24,7 @@ if( get_theme_mod('hashone_disable_contact_sec') != 'on' ){ ?>
 
 		<div class="hs-clearfix">
 			<div class="hs-contact-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-				<?php 
+				<?php
 				$hashone_contact_form = get_theme_mod( 'hashone_contact_form' );
 
 				if($hashone_contact_form){
@@ -36,7 +36,7 @@ if( get_theme_mod('hashone_disable_contact_sec') != 'on' ){ ?>
 				}
 				?>
 			</div>
-			
+
 			<div class="hs-contact-address wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1.5s">
 				<?php
 				$hashone_contact_detail = get_theme_mod( 'hashone_contact_detail', __( 'Contact us on the detail given below', 'hashone' ) );
@@ -68,7 +68,7 @@ if( get_theme_mod('hashone_disable_contact_sec') != 'on' ){ ?>
 				</ul>
 
 				<div class="hs-social">
-				<?php 
+				<?php
 					$facebook = get_theme_mod('hashone_social_facebook');
 					$twitter = get_theme_mod('hashone_social_twitter');
 					$google_plus = get_theme_mod('hashone_social_google_plus');
@@ -94,10 +94,8 @@ if( get_theme_mod('hashone_disable_contact_sec') != 'on' ){ ?>
 					if($linkedin)
 						echo '<a class="sq-linkedin" href="'.esc_url( $linkedin ).'" target="_blank"><i class="fa fa-linkedin"></i></a>';
 				?>
-					<br><br><a href="https://www.instagram.com/medcert_training/"><strong>ig</strong></a>
-
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </div>

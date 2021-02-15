@@ -5,7 +5,7 @@
  * @package HashOne
  */
 
-get_header(); 
+get_header();
 
 $hashone_home_sections = hashone_home_section();
 

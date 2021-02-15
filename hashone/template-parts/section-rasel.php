@@ -1,43 +1,25 @@
 <?php echo do_shortcode('[et_bloom_inline optin_id="optin_1"]'); ?>
-<section class="hs-section">
+<?php
+$myme_options = get_option( 'mymedcert' );
+$all_courses = $myme_options['myme_home_settings']['myme_home_repeater'];
+$school_catalog = $myme_options['myme_home_school_catalog'];
+?>
+
+<section class="hs-section course-offered">
   <center><h2>COURSES OFFERED</h2></center>
 
   <div class="grid">
+
+		<?php foreach($all_courses as $course) : ?>
     <figure class="effect-bubba wow zoomIn">
-      <img src="https://new.mymedcert.com/wp-content/uploads/2019/03/stna-training-1-474x500.jpg" alt="img09"/>
+      <img src="<?php echo $course['myme_home_course_image']['url'] ?>" alt=""/>
       <figcaption>
-        <h2>STNA TRAINING CLASSES</h2>
-        <p>Are you a kind-hearted and compassionate individual who enjoys caring for the elderly?</p>
-        <a href="/stna-class-dates/">View more</a>
+        <h2><?php echo $course['myme_home_course_title'] ?></h2>
+        <p><?php echo $course['myme_home_course_description'] ?></p>
+        <a href="<?php echo $course['myme_home_course_link'] ?>">View more</a>
       </figcaption>
     </figure>
-
-    <figure class="effect-bubba wow zoomIn">
-      <img src="https://new.mymedcert.com/wp-content/uploads/2019/03/home-health-aide-1-474x500.jpg" alt="img10"/>
-      <figcaption>
-        <h2>PHLEBOTOMY TECHNICIAN TRAINING</h2>
-        <p>Start training to become a certified phlebotomy technician!</p>
-        <a href="/phlebotomy_entrance_page//">View more</a>
-      </figcaption>
-    </figure>
-
-    <figure class="effect-oscar wow zoomIn">
-      <img src="https://new.mymedcert.com/wp-content/uploads/2019/03/phlebotomy-training-1-474x500.jpg" alt="img10"/>
-      <figcaption>
-        <h2>CPR / FIRST AID / AED / BLOOD-BORNE PATHOGENS TRAINING</h2>
-        <p>Med-Cert offers two year American Heart Association certification in the areas of CPR, First Aid, and AED (Automated External Defibrillator).</p>
-        <a href="/cpr_entrance_page/">View more</a>
-      </figcaption>
-    </figure>
-
-    <figure class="effect-oscar wow zoomIn">
-      <img src="https://new.mymedcert.com/wp-content/uploads/2019/03/ekg-training-1-474x500.png" alt="img10"/>
-      <figcaption>
-        <h2>EKG TECHNICIAN</h2>
-        <p>Our 56-hour EKG Technician Program prepares students to perform electrocardiogram tests to monitor and record electrical impulses transmitted by the heart.</p>
-        <a href="/childcare_provider_entrance_page/">View more</a>
-      </figcaption>
-    </figure>
+		<?php endforeach; ?>
   </div>
 
   </div>
@@ -45,7 +27,7 @@
 
 <section class="hs-section">
   <div class="download-catalog">
-    <a href="https://new.mymedcert.com/wp-content/uploads/2019/03/Med-_Cert_School_Catalog_Version_4.15.2016.docx" target="_blank">CLICK HERE TO DOWNLOAD OUR SCHOOL CATALOG</a>
+    <a href="<?php echo $school_catalog; ?>" target="_blank">CLICK HERE TO DOWNLOAD OUR SCHOOL CATALOG</a>
   </div>
 </section>
 
@@ -1253,5 +1235,14 @@ figure.effect-chico:hover p {
 .download-catalog a{
   color: #fff;
   font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+	.et_bloom .et_bloom_inline_form {
+ 	 margin-top: 0 !important;
+	}
+	.et_bloom .et_bloom_inline_form {
+		margin-top: 0 !important;
+	}
 }
 </style>
