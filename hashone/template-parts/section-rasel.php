@@ -26,6 +26,13 @@ $school_catalog = $myme_options['myme_home_school_catalog'];
 </section>
 
 <section class="hs-section">
+	<div class="arc90">
+		<a href="https://new.mymedcert.com/arc-90-financing/"><h3>In addition to our flexible in-house payment plans, we also offer no credit check financing through ARC 90!</h3></a>
+		<a href="https://new.mymedcert.com/arc-90-financing/"><img src="https://new.mymedcert.com/wp-content/uploads/2021/03/arc90_logo_small_clr.jpeg" alt=""></a>
+	</div>
+</section>
+
+<section class="hs-section">
   <div class="download-catalog">
     <a href="<?php echo $school_catalog; ?>" target="_blank">CLICK HERE TO DOWNLOAD OUR SCHOOL CATALOG</a>
   </div>
@@ -1235,6 +1242,7 @@ figure.effect-chico:hover p {
 .download-catalog a{
   color: #fff;
   font-size: 24px;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {

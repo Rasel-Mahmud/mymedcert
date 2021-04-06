@@ -38,6 +38,7 @@ $linkedin = $myme_options['myme_top_linkedin_link'];
 					<p class="phone"><i class="fas fa-phone-alt"></i><a href="tel:<?php echo clean($phone_numner_one); ?>"><?php echo $phone_numner_one; ?></a></p>
 					<p class="fax"><i class="fas fa-fax"></i><a href="tel:<?php echo clean($phone_numner_two); ?>"><?php echo $phone_numner_two; ?></a></p>
 					<p class="email"><i class="far fa-envelope"></i><a href="mailto:<?php echo $email_address; ?>"><?php echo $email_address; ?></a></p>
+					<p class="office-hour">Office Hours: Monday, Wednesday, Friday 1pm - 5pm</p>
 				</div>
 				<div class="right-bar">
 					<a href="<?php echo $facebook; ?>"><i class="fab fa-facebook"></i></a>

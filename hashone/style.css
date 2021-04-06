@@ -511,18 +511,18 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #ee3b24;
-  text-decoration: none;
+  color: #4a47a3;
 }
 
 a:visited {
-  color: #ee3b24;
+  color: #413c69;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #ee3b24;
+  color: #413c69;
+  text-decoration: none;
 }
 
 a:focus {
@@ -1288,7 +1288,7 @@ object {
 .hs-breadcrumbs .current,
 .hs-breadcrumbs a:hover,
 .woocommerce .woocommerce-breadcrumb a:hover {
-  color: #ee3b24;
+  color: #a7c5eb;
 }
 /*--------------------------------------------------------------
 ## General
@@ -1419,7 +1419,7 @@ object {
 .home.blog .hs-main-navigation .current-menu-item:hover > a,
 .home.blog .hs-main-navigation .current_page_ancestor:hover > a,
 .home.blog .hs-white.fadeInDown .hs-main-navigation li:hover > a {
-  color: #ee3b24;
+  color: #413c69;
 }
 
 .hs-main-navigation .current_page_item > a,
@@ -1433,7 +1433,7 @@ object {
   > a,
 .home.blog .hs-main-navigation .current > a,
 .home.blog .hs-white.fadeInDown .hs-main-navigation .current > a {
-  color: #ee3b24;
+  color: #4a47a3;
 }
 
 .hs-menu > ul > li > a:after {
@@ -1441,7 +1441,7 @@ object {
   position: absolute;
   top: 50%;
   margin-top: 12px;
-  border-bottom: 2px solid #ee3b24;
+  border-bottom: 2px solid #4a47a3;
   left: 100%;
   right: 100%;
   transition: all 0.3s ease-in-out;
@@ -2906,15 +2906,16 @@ object {
 
 /* Custom CSS */
 .top-section {
-  background: #508bbf;
+  background: #14562d;
 }
 .top-bar p,
 .top-bar i,
 .top-bar a {
   color: #f1f1f1;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
+  font-size: 14px;
+  text-decoration: none;
 }
 .top-bar {
   display: flex;
@@ -2942,6 +2943,14 @@ object {
 }
 .top-bar a:hover {
   color: #f0f0f0;
+}
+.arc90 {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.arc90 h3 {
+  line-height: 32px;
 }
 .hs-site-header.animated.fadeInDown {
   top: 0;
