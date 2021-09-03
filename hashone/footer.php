@@ -64,6 +64,12 @@
 
 <div id="hs-back-top" class="animated hs-hide"><i class="fa fa-angle-up"></i></div>
 <?php wp_footer(); ?>
+<script>
+var getFigure = document.querySelectorAll('figure.greenTable > table');
+getFigure.forEach((e) => {
+    e.classList.add("greenTable");
+});
+</script>
 
 </body>
 </html>
